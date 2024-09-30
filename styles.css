@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+  background-color: #f1f1f1;
+  color: #0f141e;
+
+  font-size: 15px;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+
+  /* font: normal 17px "Roboto", sans-serif; - вариант группировки атрибутов*/
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  color: blue;
+}
+
+a:visited {
+  color: grey;
+}
+
+.avatar {
+  width: 200px;
+  border-radius: 28px; /*! скругление углов */
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.info {
+  margin-bottom: 20px;
+  display: flex;
+}
+
+@media (max-width: 700px) {
+  .info {
+    text-align: center;
+    display: block;
+  }
+}
+
+.info-text {
+  margin-left: 30px;
+}
+
+.info-text h4 {
+  margin-bottom: 10px;
+}
+
+.info p {
+  color: #86898f;
+  margin: 0; /*! без отступов */
+  font-style: italic; /*! наклонность */
+  font-weight: 400; /*! жирность */
+  text-decoration: none;
+  /*! text-transform: lowercase; весь текст в нижнем регистре */
+  /*! letter-spacing: 5px; расстояние между буквами*/
+  /*! word-spacing: 42px; рассто яние между словами*/
+}
+
+/* Box Model*/
+.container {
+  max-width: 750px;
+  margin: auto; /*! делает соответствующие отступы для размещения контента в центре экрана*/
+  padding-top: 30px;
+}
+
+/* .social {
+  background: lavenderblush;
+  padding: 15px;
+  border: 5px solid red;
+  border-bottom-style: dotted; 
+  border-right-color: blue;
+  border-top-width: 15px; можно настроить стиль любой границы 
+  margin: 20px;
+} */
+
+/* .box-model > div {
+  float: left;
+  background: black;
+  height: 200 px;
+  border: 4px solid red;
+  width: 25%;
+  box-sizing: border-box; позволяет учитывать границы в размер каждого блока, чтобы они помещались с шириной в 25% в ряд, а не разъезжались в разные строки 
+} */
+
+.bg-yellow {
+  background: #fff9dc;
+}
+
+.bg-green {
+  background: #e5ffe7;
+}
+
+.bg-red {
+  background: #ffe5e5;
+}
+
+.card {
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+.card h2 {
+  margin-bottom: 10px;
+}
+
+.list {
+  padding: 0 20;
+  /* list-style: none; позволяет убрать цифры маркированного списка */
+}
+
+.list li {
+  color: #86898f;
+  margin-bottom: 10px;
+  /* border-bottom: 1px solid grey; */
+}
+
+.table {
+  width: 100%;
+}
+
+.table td {
+  padding-bottom: 10px;
+}
+
+.table td:nth-child(2),
+.table td:nth-child(3) {
+  color: #86898f;
+}
+
+/* .table tr:nth-child(even) {
+    background: red;
+} позволяет задать фон для четных строк таблицы (even) или для нечетных (odd)*/
+
+.link-list {
+  list-style: none;
+  padding: 0px;
+}
+
+.link-list li {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+}
+
+.contact h2 {
+  text-align: center;
+}
+
+.form-group label {
+  display: block; /* для размещения label блоком, а не строкой */
+  font-size: 14px;
+  color: #86898f;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  background: transparent; /* прозрачный фон*/
+  border-bottom: 1px solid #ccc;
+  color: black;
+  padding: 15px 0 10px;
+  outline: none; /* outline меняет границу для активного поля в форме */
+  font-family: inherit; /* inherit - наследовать из родительского */
+}
+
+.row {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.row > .form-group {
+  width: 50%;
+}
+
+.row > .form-group:first-child {
+  margin-right: 20px;
+}
+
+.btn {
+  color: #fff;
+  background: #111;
+  padding: 15px;
+  border: none;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.9px;
+}
+
+/* .position {
+  border: 4px solid black;
+  margin-top: 40px;
+  padding: 20px;
+}
+
+.box {
+  position: static;
+  width: 50px;
+  height: 50px;
+  background: lightcoral;
+} */
